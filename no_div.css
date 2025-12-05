@@ -1,0 +1,42 @@
+/* ---------------- styles.css ---------------- */
+body{
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+header{
+    background: #4c84ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    padding: 10px;
+    background: #222;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: white;
+    
+}
+
+section, article, aside{
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}

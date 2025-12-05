@@ -1,0 +1,9 @@
+.time{
+    font-size: 100px;
+    text-align: center;
+    color: wheat;
+}
+body{
+
+    background: linear-gradient(to right, red,pink,white);
+}

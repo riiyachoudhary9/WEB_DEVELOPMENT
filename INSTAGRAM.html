@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instagram Login Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --muted:#8e8e8e;
+      --accent:#3897f0;
+      --card-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      --glass: rgba(255,255,255,0.8);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#222}
+
+    .page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px}
+
+    .wrap{width:1100px;max-width:95%;display:flex;gap:60px;align-items:center}
+
+    /* Left hero */
+    .hero{flex:1;position:relative;min-height:520px;display:flex;align-items:center;justify-content:center}
+
+    /* stacked phone cards */
+    .card-stack{position:relative;width:360px;height:520px}
+    .card{position:absolute;left:50%;top:50%;transform-origin:center; width:260px;height:420px;border-radius:26px; overflow:hidden; box-shadow:var(--card-shadow); background:linear-gradient(180deg,#fff,#f6f6f6);}
+
+    .card img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .card.center{width:300px;height:480px;border-radius:30px;transform:translate(-50%,-50%) rotate(0deg) scale(1);z-index:3}
+    .card.left{transform:translate(-80%,-40%) rotate(-12deg) scale(0.85);z-index:1}
+    .card.right{transform:translate(-20%,-60%) rotate(8deg) scale(0.9);z-index:2}
+
+    /* fun badges */
+    .badge{position:absolute;padding:8px 10px;border-radius:16px;background:linear-gradient(90deg,#9bf,#6fc);box-shadow:0 6px 18px rgba(60,60,60,0.12);font-weight:600;color:white;font-size:13px}
+    .badge.heart{left:18%;top:14%}
+    .badge.star{right:10%;top:48%}
+
+    /* Right login area */
+    .auth{width:360px}
+    .auth .box{background:#fff;border:1px solid #e6e6e6;padding:34px;border-radius:8px;text-align:center}
+    .logo{font-family:Lobster,serif;font-size:48px;margin-bottom:12px}
+    .auth p{color:var(--muted);margin:0 0 18px}
+
+    .input{width:100%;padding:10px 12px;margin:6px 0;border-radius:4px;border:1px solid #dbdbdb;background:#fafafa}
+    .btn{width:100%;padding:10px;border-radius:6px;border:none;background:#9b8cff;color:white;font-weight:600;cursor:pointer;margin-top:10px}
+
+    .or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px;margin:12px 0}
+    .or::before, .or::after{content:"";height:1px;flex:1;background:#efefef}
+
+    .fb{display:flex;align-items:center;justify-content:center;gap:8px;color:#385185;font-weight:600;margin-top:8px}
+
+    .forgot{color:var(--muted);font-size:13px;margin-top:8px}
+
+    .signup{background:transparent;border:1px solid transparent;padding:18px;margin-top:12px;text-align:center}
+    .signup a{color:#3897f0;text-decoration:none;font-weight:600}
+
+    /* footer links */
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+    footer a{color:var(--muted);text-decoration:none;margin:0 8px}
+
+    /* small responsive tweaks */
+    @media (max-width:900px){
+      .wrap{flex-direction:column;gap:28px}
+      .hero{order:1}
+      .auth{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="wrap">
+      <div class="hero">
+        <div class="card-stack">
+          <div class="card left"><img src="/mnt/data/WhatsApp Image 2025-11-04 at 11.27.20.jpeg" alt="left"></div>
+          <div class="card center"><img src="/mnt/data/WhatsApp Image 2025-11-04 at 11.27.20.jpeg" alt="center"></div>
+          <div class="card right"><img src="/mnt/data/WhatsApp Image 2025-11-04 at 11.27.20.jpeg" alt="right"></div>
+
+          <div class="badge heart">❤</div>
+          <div class="badge star">★</div>
+        </div>
+      </div>
+
+      <div class="auth">
+        <div class="box">
+          <div class="logo">Instagram</div>
+          <p>Phone number, username or email address</p>
+
+          <input class="input" placeholder="Phone number, username or email address">
+          <input class="input" placeholder="Password" type="password">
+          <button class="btn">Log in</button>
+
+          <div class="or">OR</div>
+
+          <div class="fb">🔵 <span>Log in with Facebook</span></div>
+          <div class="forgot">Forgotten your password?</div>
+        </div>
+
+        <div class="signup">
+          Don't have an account? <a href="#">Sign up</a>
+        </div>
+
+        <footer>
+          <div>
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+          <div style="margin-top:10px">English (UK) © 2025 Instagram from Meta</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
