@@ -1,0 +1,12 @@
+.class{
+    background-color:blue;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    fontcolor: white;
+    display: flex;
+}
+.male{
+    width: 8px;
+    height: 16px;

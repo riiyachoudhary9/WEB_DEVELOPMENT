@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appvila – HTML & CSS Clone</title>
+
+  <!-- Google Font used in original theme -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Exact primary palette used in Appvila */
+      --primary: #155bd5;
+      --secondary: #0f172a;
+      --text-dark: #1e293b;
+      --text-light: #64748b;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      background: var(--primary);
+      padding: 22px 90px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    nav ul li a {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.9);
+    }
+
+    nav ul li a:hover {
+      background-color:crimson
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      background: var(--primary);
+      padding: 110px 90px 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--white);
+    }
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 6px;
+      margin-right: 15px;
+    }
+    .hero-buttons a:hover {
+      background-color:crimson
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.6);
+      color: var(--white);
+    }
+
+    .hero-image img {
+      width: 380px;
+    }
+
+  
+    .features {
+      background: var(--bg-light);
+      padding: 110px 90px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--secondary);
+    }
+
+    .features > p {
+      max-width: 600px;
+      margin: 0 auto 70px;
+      font-size: 15px;
+      color: var(--text-light);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .feature-box {
+      background: var(--white);
+      padding: 45px 35px;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+      text-align: left;
+    }
+
+    .feature-box h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--secondary);
+    }
+
+    .feature-box p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: var(--secondary);
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      padding: 28px;
+      font-size: 14px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 992px) {
+      header, .hero, .features {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        margin-bottom: 50px;
+      }
+
+      .hero-image img {
+        width: 300px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Appvila</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>A Powerful App For Your Business</h1>
+      <p>
+        From open source to pro services, Appvila helps you build, deploy,
+        and scale your mobile application effortlessly.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Get Started</a>
+        <a href="#" class="btn-outline">Download App</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://themewagon.github.io/Appvila/assets/images/hero/phone.png" alt="App Preview">
+    </div>
+  </section>
+
+
+  <section class="features">
+    <h2>Our Features</h2>
+    <p>
+      There are many variations of passages of Lorem Ipsum available,
+      but the majority have suffered alteration in some form.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-box">
+        <h3>Easy To Use</h3>
+        <p>Clean and intuitive UI designed for a seamless user experience.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Fast Performance</h3>
+        <p>Highly optimized architecture ensures blazing fast performance.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Secure Data</h3>
+        <p>Advanced security standards to keep your data safe and protected.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-container" style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:1100px;margin:0 auto 30px;">
+      <div class="footer-box">
+        <h3 style="color:#fff;margin-bottom:15px;">Appvila</h3>
+        <p style="font-size:14px;line-height:1.7;">
+          Appvila is a modern app landing page template designed to help you
+          showcase your mobile application professionally.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h4 style="color:#fff;margin-bottom:15px;">Company</h4>
+        <ul style="list-style:none;font-size:14px;">
+          <li style="margin-bottom:10px;"><a href="#">About Us</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Our Team</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4 style="color:#fff;margin-bottom:15px;">Features</h4>
+        <ul style="list-style:none;font-size:14px;">
+          <li style="margin-bottom:10px;"><a href="#">Fast Performance</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Secure Data</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Cloud Sync</a></li>
+          <li><a href="#">Customization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4 style="color:#fff;margin-bottom:15px;">Support</h4>
+        <ul style="list-style:none;font-size:14px;">
+          <li style="margin-bottom:10px;"><a href="#">Help Center</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Documentation</a></li>
+          <li style="margin-bottom:10px;"><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;">
+      © 2025 Appvila. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
