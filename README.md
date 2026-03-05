@@ -1,4 +1,4 @@
-<h1 align="center" style="color:#FF69B4;">🌸 Web Development Projects 🌸</h1>
+<h1 align="center" style="color:#FF69B4;"> Web Development Projects </h1>
 <p align="center">
   A collection of my web development experiments, projects, and learning exercises.
 </p>
@@ -12,18 +12,18 @@
 
 ---
 
-## 💖 About This Repository
+##  About This Repository
 This repository showcases my journey in **front-end and full-stack web development**.  
 From simple HTML/CSS pages to interactive JavaScript applications, each project reflects my learning and creativity.  
 
 ---
 
-## 🌷 Features
-- Responsive designs 🌸  
-- Minimal and soft aesthetics 💕  
-- Interactive UI with JavaScript 🎀  
-- Projects using HTML, CSS, JavaScript, and React ✨  
+##  Features
+- Responsive designs   
+- Minimal and soft aesthetics   
+- Interactive UI with JavaScript 
+- Projects using HTML, CSS, JavaScript, and React   
 
 ---
 
-## 📂 Project Structure
+
